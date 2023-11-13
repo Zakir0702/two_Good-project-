@@ -36,13 +36,16 @@ body{
     padding: 10px;
 }
 #nav-part1{
-    /* background-color: red; */ 
+    /* background-color: red;  */
     height: 82px;
     overflow: hidden;
 }
-#nav-part1{
+#nav-part1 svg{
     display: block;
 }
+/* #nav-part1{
+    display: block;
+} */
 #nav-part2 #links a{
     text-transform: uppercase;
 

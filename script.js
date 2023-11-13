@@ -28,7 +28,7 @@ ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 ScrollTrigger.refresh();
 
 }
-locomotiveAnimation(); 
+locomotiveAnimation()
 function navbarAnimation() {
     gsap.to("#nav-part1 svg",{
         transform:"translateY(-100%)",
@@ -37,9 +37,9 @@ function navbarAnimation() {
             scroller:"#main",
             start:"top 0",
             end:"top -5%",
-            scrub:true
-        }
-    })
+            scrub:true,
+        },
+    });
     gsap.to("#nav-part2 #links",{
         transform:"translateY(-100%)",
         opacity:0,
@@ -48,11 +48,11 @@ function navbarAnimation() {
             scroller:"#main",
             start:"top 0",
             end:"top -5%",
-            scrub:true
-        }
-    })
+            scrub:true,
+        },
+    });
 }
-navbarAnimation();
+navbarAnimation()
 function videoConAnimation() {
     var videocon=document.querySelector("#video-container")
 var playbtn=document.querySelector("#PLAY")
@@ -75,7 +75,7 @@ videocon.addEventListener("mousemove",function(dets){
     })
 })
 }
-videoConAnimation();
+videoConAnimation()
 
 function loadingAnimation() {
     gsap.from("#page1 h1",{
@@ -92,7 +92,7 @@ function loadingAnimation() {
         duration:0.5,
     })
 }
-loadingAnimation();
+loadingAnimation()
 function cursorAnimation() {
 
     // document.querySelector("#child1").addEventListener("mouseenter",function(){
@@ -108,8 +108,8 @@ function cursorAnimation() {
     document.addEventListener("mousemove",function (dets) {
         gsap.to("#cursor",{
             left:dets.x,
-            top:dets.y
-        })
+            top:dets.y,
+        });
     })
     document.querySelectorAll(".child").forEach(function(elem){
            elem.addEventListener("mouseenter",function(){
@@ -125,7 +125,7 @@ function cursorAnimation() {
     });
 
 }
-cursorAnimation();
+cursorAnimation()
 
 
 
